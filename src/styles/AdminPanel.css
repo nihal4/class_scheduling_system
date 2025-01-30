@@ -1,0 +1,238 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Fira Code', monospace;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Admin Panel Styles */
+  .admin-panel {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .admin-panel h2 {
+    font-family: 'Fira Code', monospace;
+    font-size: 2rem;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .admin-panel p {
+    font-family: 'Fira Code', monospace;
+    font-size: 1.2rem;
+    color: #34495e;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .admin-panel input,
+  .admin-panel textarea {
+    font-family: 'Fira Code', monospace;
+    font-size: 1rem;
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .admin-panel input[type="datetime-local"] {
+    padding: 12px;
+  }
+  
+  .admin-panel button {
+    font-family: 'Fira Code', monospace;
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+ 
+  
+  .admin-panel button:focus {
+    outline: none;
+  }
+  
+  .admin-panel .topics-section {
+    margin-bottom: 20px;
+  }
+  
+  .admin-panel .topics-section h3 {
+    font-family: 'Fira Code', monospace;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .admin-panel .topics-section div {
+    margin-bottom: 10px;
+  }
+  
+  .admin-panel .topics-section input {
+    font-size: 1rem;
+  }
+  
+  .admin-panel .topics-section button {
+    font-size: 1rem;
+    background-color: #1b9038;
+    margin-top: 10px;
+  }
+  
+  .admin-panel .checkbox-section {
+    margin-top: 20px;
+  }
+  
+  .admin-panel .checkbox-label {
+    font-family: 'Fira Code', monospace;
+    font-size: 1.1rem;
+    color: #34495e;
+    margin-top: 10px;
+  }
+  
+  .admin-panel .checkbox-label input {
+    margin-left: 10px;
+  }
+  
+  .admin-panel textarea {
+    height: 120px;
+    resize: vertical;
+  }
+
+  .logout-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 100%;
+  }
+  
+  
+  .logout-button:focus {
+    outline: none;
+  }
+  
+
+  
+  /* Responsive Design */
+  @media (max-width: 1440px) {
+    .admin-panel {
+      max-width: 85%;
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    .admin-panel {
+      max-width: 90%;
+      padding: 25px;
+    }
+  
+    .admin-panel h2 {
+      font-size: 1.8rem;
+    }
+  
+    .admin-panel p {
+      font-size: 1.1rem;
+    }
+  
+    .admin-panel input,
+    .admin-panel textarea {
+      font-size: 0.95rem;
+    }
+  
+    .admin-panel button {
+      padding: 10px 20px;
+      font-size: 1rem;
+    }
+  
+    .admin-panel .topics-section button {
+      font-size: 0.95rem;
+      padding: 8px 15px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .admin-panel {
+      max-width: 95%;
+      padding: 20px;
+    }
+  
+    .admin-panel h2 {
+      font-size: 1.6rem;
+    }
+  
+    .admin-panel p {
+      font-size: 1rem;
+    }
+  
+    .admin-panel input,
+    .admin-panel textarea {
+      font-size: 0.9rem;
+    }
+  
+    .admin-panel button {
+      padding: 8px 15px;
+      font-size: 0.95rem;
+    }
+  
+    .admin-panel .topics-section button {
+      font-size: 0.9rem;
+      padding: 6px 12px;
+    }
+  }
+  
+  @media (max-width: 425px) {
+    .admin-panel {
+      max-width: 100%;
+      padding: 15px;
+    }
+  
+    .admin-panel h2 {
+      font-size: 1.4rem;
+    }
+  
+    .admin-panel p {
+      font-size: 0.95rem;
+    }
+  
+    .admin-panel input,
+    .admin-panel textarea {
+      font-size: 0.85rem;
+    }
+  
+    .admin-panel button {
+      padding: 8px 15px;
+      font-size: 0.9rem;
+    }
+  
+    .admin-panel .topics-section button {
+      font-size: 0.85rem;
+      padding: 6px 10px;
+    }
+  }
+  

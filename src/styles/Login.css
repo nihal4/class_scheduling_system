@@ -1,0 +1,178 @@
+/* Namespace the styles under .login-page */
+.login-page body {
+  font-family: 'Fira Code', monospace;
+}
+
+/* Login Page Styles */
+.login-page .login-container {
+  font-family: 'Fira Code', monospace;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f7f7f7;
+  padding: 20px;
+}
+
+.login-page h2 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.login-page form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-page input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  font-family: 'Fira Code', monospace;
+}
+
+.login-page input[type="email"]:focus,
+.login-page input[type="password"]:focus,
+.login-page input[type="text"]:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+.login-page button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+  width: 100%;
+  max-width: 200px;
+}
+
+.login-page button:hover {
+  background-color: #45a049;
+}
+
+.login-page button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.login-page p {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 1440px) {
+  .login-page h2 {
+    font-size: 1.6rem;
+  }
+
+  .login-page form {
+    max-width: 350px;
+  }
+
+  .login-page input {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .login-page h2 {
+    font-size: 1.4rem;
+  }
+
+  .login-page form {
+    max-width: 300px;
+  }
+
+  .login-page button {
+    max-width: 180px;
+  }
+
+  .login-page input {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .login-page .login-container {
+    padding: 15px;
+  }
+
+  .login-page h2 {
+    font-size: 1.2rem;
+  }
+
+  .login-page form {
+    padding: 20px;
+    max-width: 280px;
+  }
+
+  .login-page button {
+    max-width: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-page h2 {
+    font-size: 1.1rem;
+  }
+
+  .login-page form {
+    padding: 15px;
+    max-width: 250px;
+  }
+
+  .login-page input {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .login-page button {
+    font-size: 14px;
+    max-width: 140px;
+    padding: 8px 15px;
+  }
+}
+
+@media (max-width: 320px) {
+  .login-page h2 {
+    font-size: 1rem;
+  }
+
+  .login-page form {
+    padding: 10px;
+    max-width: 220px;
+  }
+
+  .login-page input {
+    font-size: 13px;
+    padding: 6px;
+  }
+
+  .login-page button {
+    font-size: 13px;
+    max-width: 120px;
+    padding: 6px 12px;
+  }
+}

@@ -1,0 +1,351 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Fira Code', monospace;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
+  
+  /* End User Page */
+  .end-user-page {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Ensure it adjusts to smaller screen sizes */
+    overflow-x: hidden; /* Prevent horizontal overflow */
+    word-wrap: break-word; /* Prevent text from overflowing */
+  }
+  
+  .end-user-page h2 {
+    font-family: 'Fira Code', monospace;
+    font-size: 2rem;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+  }
+  
+  .topic-message {
+    font-family: 'Fira Code', monospace;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #34495e;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  .class-topics {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+    text-align: center;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
+  
+  .class-topics li {
+    font-family: 'Fira Code', monospace;
+    font-size: 1.1rem;
+    color: #34495e;
+    padding: 10px 20px;
+    margin: 5px 10px;
+    border-radius: 5px;
+    background-color: #f6f6f6;
+    box-sizing: border-box;
+    word-wrap: break-word; /* Prevent long text from overflowing */
+  }
+  
+  .class-topics li:last-child {
+    border-bottom: none;
+  }
+  
+  .urgent-message {
+    font-family: 'Fira Code', monospace;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #e74c3c;
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .join-button {
+    font-family: 'Fira Code', monospace;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box; /* Ensure padding does not affect button width */
+  }
+  
+  .join-button:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+  }
+  
+  .join-button:focus {
+    outline: none;
+  }
+  
+  .message {
+    font-family: 'Fira Code', monospace;
+    font-size: 1.1rem;
+    color: #16a085;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .loading {
+    font-family: 'Fira Code', monospace;
+    font-size: 1.2rem;
+    color: #888;
+    text-align: center;
+    padding: 50px 0;
+  }
+  
+  /* Media Queries for Responsiveness */
+  
+  /* Extra Large Screens (1440px and above) */
+  @media (min-width: 1440px) {
+    .end-user-page {
+      max-width: 1200px;
+      padding: 40px;
+    }
+  
+    .end-user-page h2 {
+      font-size: 2.5rem;
+    }
+  
+    .topic-message {
+      font-size: 1.4rem;
+    }
+  
+    .class-topics li {
+      font-size: 1.2rem;
+      padding: 15px 30px;
+    }
+  
+    .urgent-message {
+      font-size: 1.6rem;
+    }
+  
+    .join-button {
+      padding: 14px 30px;
+      font-size: 1.2rem;
+    }
+  
+    .message {
+      font-size: 1.2rem;
+    }
+  
+    .loading {
+      font-size: 1.3rem;
+    }
+  }
+  
+  /* Large Screens (1024px and above) */
+  @media (min-width: 1024px) and (max-width: 1439px) {
+    .end-user-page {
+      max-width: 1000px;
+      padding: 35px;
+    }
+  
+    .end-user-page h2 {
+      font-size: 2.2rem;
+    }
+  
+    .topic-message {
+      font-size: 1.3rem;
+    }
+  
+    .class-topics li {
+      font-size: 1.1rem;
+      padding: 12px 25px;
+    }
+  
+    .urgent-message {
+      font-size: 1.5rem;
+    }
+  
+    .join-button {
+      padding: 13px 28px;
+      font-size: 1.2rem;
+    }
+  
+    .message {
+      font-size: 1.2rem;
+    }
+  
+    .loading {
+      font-size: 1.3rem;
+    }
+  }
+  
+  /* Medium Screens (768px and above) */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .end-user-page {
+      max-width: 90%;
+      padding: 25px;
+    }
+  
+    .end-user-page h2 {
+      font-size: 2rem;
+    }
+  
+    .topic-message {
+      font-size: 1.2rem;
+    }
+  
+    .class-topics li {
+      font-size: 1.1rem;
+      padding: 12px 25px;
+    }
+  
+    .urgent-message {
+      font-size: 1.4rem;
+    }
+  
+    .join-button {
+      padding: 12px 25px;
+      font-size: 1.1rem;
+    }
+  
+    .message {
+      font-size: 1.1rem;
+    }
+  
+    .loading {
+      font-size: 1.2rem;
+    }
+  }
+  
+  /* Small Screens (425px and below) */
+  @media (max-width: 425px) {
+    .end-user-page {
+      max-width: 95%;
+      padding: 20px;
+    }
+  
+    .end-user-page h2 {
+      font-size: 1.8rem;
+    }
+  
+    .topic-message {
+      font-size: 1.1rem;
+    }
+  
+    .class-topics li {
+      font-size: 1rem;
+      padding: 10px 20px;
+    }
+  
+    .urgent-message {
+      font-size: 1.3rem;
+    }
+  
+    .join-button {
+      padding: 10px 20px;
+      font-size: 1rem;
+    }
+  
+    .message {
+      font-size: 1rem;
+    }
+  
+    .loading {
+      font-size: 1.1rem;
+    }
+  }
+  
+  /* Extra Small Screens (375px and below) */
+  @media (max-width: 375px) {
+    .end-user-page {
+      max-width: 95%;
+      padding: 15px;
+    }
+  
+    .end-user-page h2 {
+      font-size: 1.6rem;
+    }
+  
+    .topic-message {
+      font-size: 1rem;
+    }
+  
+    .class-topics li {
+      font-size: 0.9rem;
+      padding: 10px 18px;
+    }
+  
+    .urgent-message {
+      font-size: 1.2rem;
+    }
+  
+    .join-button {
+      padding: 8px 18px;
+      font-size: 0.9rem;
+    }
+  
+    .message {
+      font-size: 0.9rem;
+    }
+  
+    .loading {
+      font-size: 1rem;
+    }
+  }
+  
+  /* Very Small Screens (320px and below) */
+  @media (max-width: 320px) {
+    .end-user-page {
+      max-width: 95%;
+      padding: 10px;
+    }
+  
+    .end-user-page h2 {
+      font-size: 1.4rem;
+    }
+  
+    .topic-message {
+      font-size: 0.9rem;
+    }
+  
+    .class-topics li {
+      font-size: 0.8rem;
+      padding: 8px 16px;
+    }
+  
+    .urgent-message {
+      font-size: 1rem;
+    }
+  
+    .join-button {
+      padding: 8px 16px;
+      font-size: 0.8rem;
+    }
+  
+    .message {
+      font-size: 0.8rem;
+    }
+  
+    .loading {
+      font-size: 0.9rem;
+    }
+  }
+  
